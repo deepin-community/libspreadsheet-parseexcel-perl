@@ -1,0 +1,39 @@
+Source: libspreadsheet-parseexcel-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@iki.fi>,
+           Damyan Ivanov <dmn@debian.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl,
+                     libcrypt-rc4-perl,
+                     libdigest-perl-md5-perl,
+                     libjcode-pm-perl,
+                     libole-storage-lite-perl,
+                     libspreadsheet-writeexcel-perl,
+                     libtest-cpan-meta-perl,
+                     libtest-minimumversion-perl,
+                     libtest-pod-perl,
+                     libunicode-map-perl
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libspreadsheet-parseexcel-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libspreadsheet-parseexcel-perl.git
+Homepage: https://metacpan.org/release/Spreadsheet-ParseExcel
+
+Package: libspreadsheet-parseexcel-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcrypt-rc4-perl,
+         libdigest-perl-md5-perl,
+         libjcode-pm-perl,
+         libole-storage-lite-perl,
+         libspreadsheet-writeexcel-perl,
+         libunicode-map-perl
+Description: Perl module to access information from Excel Spreadsheets
+ Spreadsheet::ParseExcel is a Perl module allows one to extract information
+ from Excel spreadsheets. It can be used to read information from an Excel
+ 95-2003 file. It cannot read information in the new XML-based XLSX format,
+ for that, see Spreadsheet::XLSX (libspreadsheet-xlsx-perl) instead.
